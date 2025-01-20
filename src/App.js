@@ -13,6 +13,7 @@ import Resources from "./Components/Resources";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+    <Route index="/HomePage" element={<HomePage />} />
     <Route path="/HomePage" element={<HomePage />} />
     <Route path='/AboutUS' element={<AboutUS />} />
     <Route path='/OurServices' element={<OurServices />} />
