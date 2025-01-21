@@ -5,9 +5,12 @@ import Logo from '../Assets/Purple.png';
 import { GrUserWorker } from "react-icons/gr";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const OurServices = () => {
   return (
+    <div>
+
     <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen">
       <div className='text-purple-700'>
         <Sidebar />
@@ -52,6 +55,10 @@ const OurServices = () => {
 </p>
       </div>
     </div>
+    <Footer />
+
+    </div>
+
   )
 }
 
