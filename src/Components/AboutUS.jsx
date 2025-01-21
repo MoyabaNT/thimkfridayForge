@@ -36,7 +36,7 @@ const AboutUS = () => {
       {/* Main Content Section */}
       <div className="flex flex-col items-center p-8">
         <h2 className="font-bold text-xl text-purple-700">About Us</h2>
-        <h3 className="mt-6 text-lg text-gray-700">Why Us?</h3>
+        <h3 className="mt-6 text-lg font-bold text-purple-700">Why Us?</h3>
         <p className="mt-4 text-center text-gray-600 max-w-3xl">
           Business Consultants and Advisors are key—that’s why when it comes to client 
           selection, we’re choosy. We want to give each of you the time and guidance you deserve. 
@@ -107,7 +107,7 @@ const AboutUS = () => {
               alt="Forge Partner 1" 
               className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-              <label className=' text-sm'>Tariq Shurmah</label>
+              <label className='text-sm text-purple-700 font-bold'>Tariq Shurmah</label>
             <div className='flex gap-2'>
             <Link to='https://www.linkedin.com/in/tariq-shurmah-91b1a533/' target='_blank'>
             <FaLinkedin size={35} className='hover:text-blue-900'/>
@@ -121,7 +121,7 @@ const AboutUS = () => {
               alt="Forge Partner 2" 
               className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-              <label className=' text-sm'>Renoo Shurmah
+              <label className=' text-sm text-purple-700 font-bold'>Renoo Shurmah
               </label>
             <div className='flex gap-2'>
             <Link to='https://www.linkedin.com/in/renoo-shurmah-619253223/' target='_blank'>
@@ -136,7 +136,7 @@ const AboutUS = () => {
             alt="Forge Partner 2" 
             className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-              <label className=' text-sm'>Lilian Mathuntuta
+              <label className=' text-sm text-purple-700 font-bold'>Lilian Mathuntuta
               </label>
             <div className='flex gap-2'>
             <Link to='https://www.linkedin.com/in/nolutho-lilian-mathuntuta-285020192/' target='_blank'>
@@ -154,7 +154,7 @@ const AboutUS = () => {
               alt="Forge Partner 2" 
               className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-              <label className=' text-sm'>Sudhir Rugber
+              <label className=' text-sm text-purple-700 font-bold'>Sudhir Rugber
               </label>
             <div className='flex gap-2'>
             <Link to='https://www.linkedin.com/in/sbonile-cebekhulu-87994a207/' target='_blank'>
@@ -169,7 +169,7 @@ const AboutUS = () => {
               alt="Forge Partner 2" 
               className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-              <label className=' text-sm'>Yuvesh Harry
+              <label className=' text-sm text-purple-700 font-bold'>Yuvesh Harry
               </label>
             <div className='flex gap-2'>
             <Link to='https://www.linkedin.com/in/sudhir-rugber-081285331/' target='_blank'>
@@ -184,7 +184,7 @@ const AboutUS = () => {
               alt="Forge Partner 2" 
               className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-              <label className=' text-sm'>Sbonile Cebekhulu
+              <label className=' text-sm text-purple-700 font-bold'>Sbonile Cebekhulu
               </label>
             <div className='flex gap-2'>
             <Link to='https://www.linkedin.com/in/sbonile-cebekhulu-87994a207/' target='_blank'>

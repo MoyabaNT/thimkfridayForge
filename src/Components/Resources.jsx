@@ -22,8 +22,9 @@ const Resources = () => {
           </Link>
         </div>
       </div>
+      <h1 className='text-center font-bold text-purple-700 text-2xl'>Resources</h1>
       <div className='flex justify-center mt-14'>
-
+        
         <div className='p-4 rounded-md lg:w-1/2 sm:w-full text-center shadow-2xl bg-gradient-to-b from-gray-200 to-gray-300'>
           <h1 className='text-2xl font-bold p-2 text-purple-700'>Understanding POPIA Compliance in the Context of BBBEE</h1>
           <p className='p-8 '><span className='font-bold text-purple-700'>Introduction:</span> POPIA and BBBEE are two important regulatory frameworks in South Africa that businesses need to navigate. Understanding how these regulations intersect is crucial for companies striving for compliance and good governance practices.</p>
