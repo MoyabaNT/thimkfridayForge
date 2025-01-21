@@ -2,10 +2,13 @@ import React from 'react';
 import Sidebar from './SideBar';
 import Logo from '../Assets/Purple.png';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const Contacts = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-300 to-gray-200 min-h-screen flex flex-col">
+    <div>
+
+    <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen flex flex-col">
       {/* Sidebar */}
       <div className='text-purple-700'>
         <Sidebar />
@@ -66,6 +69,9 @@ const Contacts = () => {
         
       </div>
     </div>
+    <Footer />
+    </div>
+
   );
 };
 

@@ -2,10 +2,13 @@ import React from 'react'
 import Sidebar from './SideBar'
 import Logo from '../Assets/Purple.png';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const Resources = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen">
+    <div>
+
+    <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen p-4 ">
       <div className='text-purple-700'>
         <Sidebar />
         <div className="absolute top-0 right-0 p-4">
@@ -21,7 +24,7 @@ const Resources = () => {
       </div>
       <div className='flex justify-center mt-14'>
 
-        <div className='p-4 rounded-md w-1/2 text-center shadow-2xl bg-gradient-to-b from-gray-200 to-gray-300'>
+        <div className='p-4 rounded-md lg:w-1/2 sm:w-full text-center shadow-2xl bg-gradient-to-b from-gray-200 to-gray-300'>
           <h1 className='text-2xl font-bold p-2 text-purple-700'>Understanding POPIA Compliance in the Context of BBBEE</h1>
           <p className='p-8 '><span className='font-bold text-purple-700'>Introduction:</span> POPIA and BBBEE are two important regulatory frameworks in South Africa that businesses need to navigate. Understanding how these regulations intersect is crucial for companies striving for compliance and good governance practices.</p>
           <p className='p-4'><span className='font-bold text-purple-700'>POPIA's Impact on BBBEE:</span> The Protection of Personal Information Act (POPIA) governs how businesses collect, process, and manage personal information. In the context of Broad-Based Black Economic Empowerment (BBBEE), POPIA's provisions are particularly relevant due to the collection and handling of personal data for BBBEE reporting purposes.</p>
@@ -55,6 +58,9 @@ const Resources = () => {
           </div>
         </div>
         </div>
+        <Footer />
+        </div>
+
 
   )
 }

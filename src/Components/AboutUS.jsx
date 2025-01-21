@@ -11,9 +11,12 @@ import sudhir from '../Assets/Aboutusimg/Sudhir.jpg';
 import spons from '../Assets/Aboutusimg/spons.jpg';
 import vesh from '../Assets/Aboutusimg/vesh.jpg';
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer';
+import { FaLinkedin } from "react-icons/fa6";
 const AboutUS = () => {
   return (
+    <div>
+
     <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen">
       {/* Top Bar Section */}
       <div className='text-purple-700'>
@@ -95,64 +98,106 @@ const AboutUS = () => {
       </div>
 
       {/*must attend to this*/}
-        <div class='team' className='p-32 ml-64'>
-          <h3 className="text-lg ml-96 text-purple-700  font-bold">Team</h3>
-        <div className='grid grid-cols-3 md:grid-cols-4 gap-8 items-center p-8'>
-          <div>
+        <div class='team' className='p-32 lg:ml-64'>
+          <h3 className="text-lg text-center lg:mr-48 text-purple-700 font-bold p-8">Team</h3>
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-8 items-center'>
+          <div className='bg-gray-200 shadow-xl p-4 rounded-lg'>
+            <img 
+              src={b262} 
+              alt="Forge Partner 1" 
+              className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
+            />
+              <label className=' text-sm'>Tariq Shurmah</label>
+            <div className='flex gap-2'>
+            <Link to='https://www.linkedin.com/in/tariq-shurmah-91b1a533/' target='_blank'>
+            <FaLinkedin size={35} className='hover:text-blue-900'/>
+            </Link>
+            <p className='text-xs'>Co-Founder and Managing Director</p>
+            </div>
+          </div>
+          <div className='bg-gray-200 shadow-xl p-4 rounded-lg'>
             <img 
               src={b261} 
               alt="Forge Partner 2" 
-              className="w-auto md:w-60 h-auto object-cover rounded-md shadow-lg"
+              className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-            <label>Boss</label>
+              <label className=' text-sm'>Renoo Shurmah
+              </label>
+            <div className='flex gap-2'>
+            <Link to='https://www.linkedin.com/in/renoo-shurmah-619253223/' target='_blank'>
+            <FaLinkedin size={35} className='hover:text-blue-900'/>
+            </Link>
+            <p className='text-xs'>Co-Founder and Project Manager</p>
+            </div>
           </div>
-          <div>
-            <img 
-              src={b262} 
-              alt="Forge Partner 2" 
-              className="w-48 md:w-60 h-auto object-cover rounded-md shadow-lg"
-              />
-          <label>Boss</label>
-
-          </div>
-          <div>
+          <div className='bg-gray-200 shadow-xl p-4 rounded-lg'>
           <img 
             src={lilan} 
             alt="Forge Partner 2" 
-            className="w-48 md:w-60 h-52 object-cover rounded-md shadow-lg"
-          />
-          <label>Boss</label>
+            className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
+            />
+              <label className=' text-sm'>Lilian Mathuntuta
+              </label>
+            <div className='flex gap-2'>
+            <Link to='https://www.linkedin.com/in/nolutho-lilian-mathuntuta-285020192/' target='_blank'>
+            <FaLinkedin size={35} className='hover:text-blue-900'/>
+            </Link>
+            <p className='text-xs'>Transformation & Skills Development Senior Officer</p>
+            </div>
           </div>
 
         </div>
-        <div className='grid grid-cols-3 md:grid-cols-4 gap-8 items-center p-8'>
-          <div>
-            <img 
+        <div className='grid grid-cols-1 md:grid-cols-4 gap-8 items-center mt-12'>
+        <div className='bg-gray-200 shadow-xl p-4 rounded-lg'>
+        <img 
               src={sudhir} 
               alt="Forge Partner 2" 
-              className="w-48 md:w-60 h-auto object-cover rounded-md shadow-lg"
+              className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
             />
-          <label>Boss</label>
+              <label className=' text-sm'>Sudhir Rugber
+              </label>
+            <div className='flex gap-2'>
+            <Link to='https://www.linkedin.com/in/sbonile-cebekhulu-87994a207/' target='_blank'>
+            <FaLinkedin size={35} className='hover:text-blue-900'/>
+            </Link>
+            <p className='text-xs'>Skills Development and Project Consultant</p>
+            </div>
           </div>
-          <div>
-          <img 
-            src={spons} 
-            alt="Forge Partner 2" 
-            className="w-48 md:w-60 h-auto object-cover rounded-md shadow-lg"
-          />
-          <label>Boss</label>
+          <div className='bg-gray-200 shadow-xl p-4 rounded-lg'>
+        <img 
+              src={vesh} 
+              alt="Forge Partner 2" 
+              className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
+            />
+              <label className=' text-sm'>Yuvesh Harry
+              </label>
+            <div className='flex gap-2'>
+            <Link to='https://www.linkedin.com/in/sudhir-rugber-081285331/' target='_blank'>
+            <FaLinkedin size={35} className='hover:text-blue-900'/>
+            </Link>
+            <p className='text-xs'>Transformation Assistant</p>
+            </div>
           </div>
-          <div>
-          <img 
-            src={vesh} 
-            alt="Forge Partner 2" 
-            className="w-48 md:w-60 h-auto object-cover rounded-md shadow-lg"
-          />
-          <label>Boss</label>
+          <div className='bg-gray-200 shadow-xl p-4 rounded-lg'>
+        <img 
+              src={spons} 
+              alt="Forge Partner 2" 
+              className="w-auto md:w-60 h-auto object-cover rounded-full shadow-lg py-1 hover:bg-purple-700"
+            />
+              <label className=' text-sm'>Sbonile Cebekhulu
+              </label>
+            <div className='flex gap-2'>
+            <Link to='https://www.linkedin.com/in/sbonile-cebekhulu-87994a207/' target='_blank'>
+            <FaLinkedin size={35} className='hover:text-blue-900'/>
+            </Link>
+            <p className='text-xs'>Skills Development Administrator</p>
+            </div>
           </div>
         </div>
 
         </div>
+        </div>
+      <Footer />
     </div>
   );
 };

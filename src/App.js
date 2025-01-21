@@ -10,6 +10,9 @@ import OurServices from "./Components/OurServices";
 import Contacts from "./Components/Contacts";
 import Resources from "./Components/Resources";
 import Footer from "./Components/Footer";
+import BBBEE from "./Components/subpages/BBBEE";
+import SkillsDev from "./Components/subpages/SkillsDev";
+import HumanRsc from "./Components/subpages/HumanRsc";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +24,9 @@ const router = createBrowserRouter(
     <Route path='/Contacts' element={<Contacts />} />
     <Route path='/Resources' element={<Resources />} />
     <Route path='/Footer' element={<Footer />} />
+    <Route path='/SkillsDev' element={<SkillsDev />} />
+    <Route path='/BBBEE' element={<BBBEE />} />
+    <Route path='/HumanRsc' element={<HumanRsc />} />
     
     
     </>
