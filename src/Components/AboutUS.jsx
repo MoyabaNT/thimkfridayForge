@@ -21,16 +21,6 @@ const AboutUS = () => {
       {/* Top Bar Section */}
       <div className='text-purple-700'>
         <Sidebar />
-        <div className="absolute top-0 right-0 p-4">
-          <Link to='/HomePage'>
-          <img 
-            src={Logo} 
-            alt="Logo" 
-            className="w-24"
-          />
-
-          </Link>
-        </div>
       </div>
 
       {/* Main Content Section */}

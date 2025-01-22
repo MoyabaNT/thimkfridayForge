@@ -8,6 +8,7 @@ import { HiOutlineChatBubbleBottomCenterText } from 'react-icons/hi2'
 import { FiTool } from "react-icons/fi";
 import { GrServices } from "react-icons/gr";
 import { RiTeamFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false) //useState is used to track UI changes in the DOM
@@ -24,70 +25,75 @@ const Sidebar = () => {
   ]
 
   return (
-    <>
+    <div className='bg-gray-300 h-16 fixed top-0 left-0 right-0 z-50'>
+      <div className="absolute top-0 right-0">
+        <Link to='/HomePage'>
+          <img 
+            src={Logo} 
+            alt="Logo" 
+            className="w-24"
+          />
+        </Link>
+      </div>
+  
       <button
-      onClick={toggleSidebar}
-      className='p-3 text-purple-700'
-      aria-label='toggle sidebar'
+        onClick={toggleSidebar}
+        className='p-3 text-purple-700'
+        aria-label='toggle sidebar'
       >
-        <CiCircleList size={25}/>
+        <CiCircleList size={30} />
       </button>
       {open && (
         <>
           <div
-          aria-hidden='true'
-          className='fixed bottom-0 left-0 right-0 top-0 z-40 bg-[rgba(114,111,113,0.2)] backdrop-blur-sm'
+            aria-hidden='true'
+            className='fixed bottom-0 left-0 right-0 top-0 z-40 bg-[rgba(114,111,113,0.2)] backdrop-blur-sm'
+          ></div>
+          <div
+            className="fixed top-0 bottom-0 left-0 z-50 w-full h-screen max-w-xs border-r-2 border-zinc-800 bg-gray-900"
+            ref={ref}
+            aria-label="Sidebar"
           >
-          </div>
-          <div 
-          className="fixed top-0 bottom-0 left-0 z-50 w-full h-screen max-w-xs border-r-2 border-zinc-800 bg-gray-900"
-          ref={ref}
-          aria-label="Sidebar"
-          >
-            <div className=' items-center justify-between p-5 border-b-2 border-gray-700'>
-            <button
-              onClick={toggleSidebar}
-              className="p-3 border-2 border-gray-700 rounded-full"
+            <div className='items-center justify-between p-5 border-b-2 border-gray-700'>
+              <button
+                onClick={toggleSidebar}
+                className="p-3 border-2 border-gray-700 rounded-full"
                 aria-label="close sidebar"
               >
-              <LiaHandPointLeft  size={25}/>
+                <LiaHandPointLeft size={25} />
               </button>
-
-              <div className=''>
-                
-                  <img 
+  
+              <div>
+                <img 
                   src={Logo} 
                   alt="mylogo" 
-                  />
-                
-              </div>            
+                />
+              </div>
             </div>
             <ul>
               {items.map((item, idx) => {
-                const {title, href, Icon} = item
-                return(
+                const { title, href, Icon } = item;
+                return (
                   <li key={title}>
                     <a
-                    onClick={toggleSidebar}
-                    href={href}
-                    className="flex items-center justify-between gap-5 p-5 transition-all border-b-2 hover:bg-gray-700 border-gray-800"
-                  >
-                    <span>{title}</span>
-                    <div>
-                      <Icon className='text-2xl' />
+                      onClick={toggleSidebar}
+                      href={href}
+                      className="flex items-center justify-between gap-5 p-5 transition-all border-b-2 hover:bg-gray-700 border-gray-800"
+                    >
+                      <span>{title}</span>
+                      <div>
+                        <Icon className='text-2xl' />
                       </div>
                     </a>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
         </>
       )}
-
-</>
-
-  )
-}
+    </div>
+  );
+  }
 
 export default Sidebar

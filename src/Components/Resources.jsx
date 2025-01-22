@@ -9,18 +9,8 @@ const Resources = () => {
     <div>
 
     <div className="bg-gradient-to-b from-gray-300 to-gray-100 min-h-screen p-4 ">
-      <div className='text-purple-700'>
+    <div className='text-purple-700'>
         <Sidebar />
-        <div className="absolute top-0 right-0 p-4">
-          <Link to='/HomePage'>
-          <img 
-            src={Logo} 
-            alt="Logo" 
-            className="w-24"
-          />
-
-          </Link>
-        </div>
       </div>
       <h1 className='text-center font-bold text-purple-700 text-2xl'>Resources</h1>
       <div className='flex justify-center mt-14'>
