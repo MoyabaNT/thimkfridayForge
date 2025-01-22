@@ -1,7 +1,5 @@
 import React from 'react'
 import Sidebar from './SideBar'
-import Logo from '../Assets/Purple.png';
-import { Link } from 'react-router-dom';
 import Footer from './Footer';
 
 const Resources = () => {

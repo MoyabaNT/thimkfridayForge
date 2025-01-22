@@ -1,7 +1,5 @@
 import React from 'react'
 import Footer from '../Footer'
-import { Link } from 'react-router-dom'
-import Logo from '../../Assets/Purple.png';
 import Sidebar from '../SideBar';
 
 const SkillsDev = () => {
@@ -12,16 +10,7 @@ const SkillsDev = () => {
       {/** Logo and Sidebar */}
       <div className='text-purple-700'>
         <Sidebar />
-        <div className="absolute top-0 right-0 p-4">
-          <Link to='/HomePage'>
-          <img 
-            src={Logo} 
-            alt="Logo" 
-            className="w-24"
-          />
 
-          </Link>
-        </div>
       </div>
       {/** Main Section */}
       <div className="flex-grow flex items-center justify-center">

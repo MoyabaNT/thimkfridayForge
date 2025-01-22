@@ -1,7 +1,6 @@
 import React from 'react'
 import Sidebar from './SideBar'
 import { GiStairsGoal } from "react-icons/gi";
-import Logo from '../Assets/Purple.png';
 import { GrUserWorker } from "react-icons/gr";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { Link } from 'react-router-dom';

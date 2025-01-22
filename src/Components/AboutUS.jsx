@@ -1,6 +1,5 @@
 import React from 'react';
 import Sidebar from './SideBar';
-import Logo from '../Assets/Purple.png';
 import hands from '../Assets/Aboutusimg/hands.png';
 import Partners from '../Assets/Aboutusimg/Partners.png';
 import v20 from '../Assets/Aboutusimg/V20.png';
